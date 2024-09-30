@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(346deg, 17%, 70%);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: rgb(159, 194, 228);
+    background-image: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(131, 119, 122, 0.281);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(86, 219, 111); */
+}
+
+#text-div{
+    /* height: 300px; */
+    width: 400px;
+    position: absolute;
+    /* background-color: red; */
+    top: 50%;
+    left: 5%;
+    transform: translate(0,-50%);
+}
+#text-div > h1{
+    font-size: 95px;
+    line-height: 78px;
+    /* font-weight: 800; */
+    font-family: 'Encode Sans Expanded', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 8px;
+}
+#small-img-div{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    /* background-color: red; */
+    background-image: url('https://images.unsplash.com/photo-1529680459049-bf0340fa0755?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+    background-position: center;
+    background-size: cover;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+#vertical-text{
+    position: absolute;
+    /* width: 100%; */
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    right: -52%;
+    /* background-color: red; */
+}
+#vertical-text > h1{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    letter-spacing: 10px;
+    
+}
+#nav{
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: space-between;
+    left: 5%;
+    top: 5%;
+}
+#nav img{
+    height: 60px;
+}
+#nav h5{
+    font-size: 20px;
+    color: #fff;
+} 
